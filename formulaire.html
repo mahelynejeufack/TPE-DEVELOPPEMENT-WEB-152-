@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mon formulaire</title>
+</head>
+<body>
+    <h2>formulaire d'inscription</h2>
+    
+    <form action="#" method="post">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="sexe">Sexe:</label>
+        <input type="radio" id="masculin" name="sexe" value="Masculin" required>
+
+        <label for="masculin">Masculin</label>
+        <input type="radio" id="feminin" name="sexe" value="Feminin" required>
+        <label for="feminin">Feminin</label>
+
+        <label for="nationalite">Nationalite :</label>
+        <select name="nationalite" id="nationalite" required>
+            <option value="Cameroun">Cameroun</option>
+            <option value="Gabon">Gabon</option>
+            <option value="RDC">RDC</option>
+            <option value="France">France</option>
+            </select>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mot de passe">Mot de passe</label>
+            <input type="password" id="mot de passe" name="mot de passe" minlength="6" required>
+
+
+            <label for="confirmer">Confirmer le mot de passe :</label>
+            <input type="password" id="confirmer" name="confirmer" minlength="6" required>
+
+            <button type="submit" class="bouton bouton-success">Soumettre</button>
+            <button type="reset" class="bouton bouton-danger">Reinitialiser</button>
+    </form>
+    </body>
+</html>
